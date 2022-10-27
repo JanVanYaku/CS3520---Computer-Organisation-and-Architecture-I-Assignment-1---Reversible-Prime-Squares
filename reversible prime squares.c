@@ -35,73 +35,6 @@ int squareNum(int num)     // return (num * num)
   return (num * num); 
 }
 
-bool isSquareNum(int num, int i)      // return true if num is a square num
-{
-  bool flag = 0;
-  if (squareNum(numReverse(i)) == num)
-    flag = true;
-  return flag;
-}
-
-int numReverse(int num)       // return the reverse of num
-{
-  int result, reverse = 0;
-  while (num > 0)
-  {
-    result = num % 10;
-    reverse = (reverse * 10) + result;
-    num /= 10;
-  }
-  return reverse;
-}
-
-bool isNotPalindrome(int num)    // return true if num is not a palindrome
-{
-  bool flag = true;
-  if (num == numReverse(num))
-  {
-    flag = false;
-  }
-  return flag;
-}
-
-/***********************************************************************************************************
-// Author: MATOBAKELE A. Lehlohonolo
-// Student No.: 202000345
-// Purpose: The program that determines and prints the first 10 reversible prime squares in c
-// Contact: lehlonotobaka@gmail.com
-************************************************************************************************************/
-
-#include<iostream>
-#include<stdbool.h>
-using namespace std;
-#include <stdio.h>
-#include <math.h>
-
-
-bool isPrime(int num)     // return true if a number is prime
-{
-  bool flag = 0;
-  int factors = 0; // Keeps track of factors of num
-  for (int i = 1; i <= num; i++)
-  {
-    if (num % i == 0) // check for a factor of a sqrt of a number
-    {
-      factors++;
-    }
-  }
-  if (factors == 2) // A prime number has two factors only
-  {
-    flag = 1;
-  }
-  return flag;
-}
-
-int squareNum(int num)     // return (num * num)
-{
-  return (num * num); 
-}
-
 int numReverse(int num)       // return the reverse of num
 {
   int result, reverse = 0;
@@ -161,14 +94,6 @@ void printReversiblePrimeNumbers()    // print a list of reversible prime square
     if (index == 10) return; // Exit the non return type function
   }
 }
-
-
-int main()
-{
-  printReversiblePrimeNumbers();
-  return 0;
-}
-
 
 
 int main()
