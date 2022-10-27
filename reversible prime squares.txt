@@ -1,7 +1,7 @@
 #***********************************************************************************************************
 # Author: MATOBAKELE A. Lehlohonolo
 # Student No.: 202000345
-# Purpose: The program that determines and prints the first 10 reversible prime squares in assembly language
+# Purpose: The program that determines and prints the first 10 reversible prime squares in machine coded language
 # Contact: lehlonotobaka@gmail.com
 #************************************************************************************************************
 ##############################################################
