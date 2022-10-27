@@ -20,7 +20,7 @@
 **********************************************************************************************************/
 
 .data
-      msg: .asciiz "The first 10 reversible prime squares are:: \n"
+      msg: .asciiz "THE FIRST 10 REVERSIBLE PRIME SQUARES ARE: \n"
       newLine: .asciiz "\n"
 .text
 .globl main
