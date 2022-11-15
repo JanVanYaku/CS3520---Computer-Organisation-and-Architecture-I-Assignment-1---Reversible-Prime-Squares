@@ -5,11 +5,8 @@
 // Contact: lehlonotobaka@gmail.com
 ************************************************************************************************************/
 
-#include<iostream>
 #include<stdbool.h>
-using namespace std;
 #include <stdio.h>
-#include <math.h>
 
 
 bool isPrime(int num)     // return true if a number is prime
